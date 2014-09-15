@@ -6,6 +6,7 @@
 
 QT       += core gui
 QT       += core sql
+QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -14,18 +15,20 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        chat.cpp \
     login.cpp \
-    index.cpp
+    index.cpp \
+    chat.cpp
 
-HEADERS  += chat.h \
+HEADERS  += \
     connection.h \
     login.h \
-    index.h
+    index.h \
+    chat.h
 
-FORMS    += chat.ui \
+FORMS    += \
     login.ui \
-    index.ui
+    index.ui \
+    chat.ui
 
 RESOURCES += \
     AllSource.qrc
